@@ -1,0 +1,70 @@
+/*------------------------PROJECT GRID SECTION---------------------------------*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #f0aa7b; }
+
+.overlay-text {
+  color: #ffffff;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+  #project-grid {
+    min-height: calc(100vh - 200px);
+    position: relative;
+    overflow: hidden; /* Prevent any potential scroll jumps */
+}
+#project-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  min-height: calc(100vh - 200px);
+}
+
+.project-grid-item {
+  width: 50%; /* Ensure consistent sizing */
+  height: 36rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  display: none; /* Start hidden by default */
+}
+
+.project-grid-item:hover .overlay {
+  opacity: 0.75;
+  transform: scale(1.25); }
+
+.project-grid-item-img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  transition: transform 2s; }
+/* Show only when filtered */
+.project-grid-item.filter {
+  display: block;
+}
+/* .project-grid-item-img:hover{
+    transform: scale(1.15);
+  } */
+.proj-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px; }
+
+/*-------------------------END OF PROJECT GRID SECTION--------------------------------*/

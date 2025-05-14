@@ -1,0 +1,182 @@
+/*Got this from Twitter @YoannHELIN's codepen that I forked*/
+.content-animated {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 160px;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: #2d2d2d;
+  /*Color of the letters*/
+}
+
+.content-animated__container {
+  font-weight: 600;
+  overflow: hidden;
+  height: 45px;
+  padding: 0 40px;
+}
+
+.content-animated__container:before {
+  content: '<';
+  left: 0;
+}
+
+.content-animated__container:after {
+  content: '>';
+  position: absolute;
+  right: 0;
+}
+
+.content-animated__container:after, .content-animated__container:before {
+  position: absolute;
+  top: 0;
+  color: #f0aa7b;
+  /*Color of the brackets*/
+  font-size: 42px;
+  line-height: 45px;
+  -webkit-animation-name: opacity;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.content-animated__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+
+.content-animated__container__list {
+  margin-top: 0;
+  padding-left: 110px;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.content-animated__container__list__item {
+  line-height: 45px;
+  margin: 0;
+}
+
+@-webkit-keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes change {
+  0%, 7.5%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  12.5%, 20.0% {
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  25.0%, 32.5% {
+    -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+  }
+  37.5%, 45.0% {
+    -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+  }
+  50.0%, 57.5% {
+    -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+  }
+  62.5%, 70.0% {
+    -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+  }
+  75.0%, 82.5% {
+    -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+  }
+  87.5%, 95.0% {
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+}
+
+@keyframes opacity {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes change {
+  0%, 7.5%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  12.5%, 20.0% {
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+  25.0%, 32.5% {
+    -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+  }
+  37.5%, 45.0% {
+    -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+  }
+  50.0%, 57.5% {
+    -webkit-transform: translate3d(0, -80%, 0);
+            transform: translate3d(0, -80%, 0);
+  }
+  62.5%, 70.0% {
+    -webkit-transform: translate3d(0, -60%, 0);
+            transform: translate3d(0, -60%, 0);
+  }
+  75.0%, 82.5% {
+    -webkit-transform: translate3d(0, -40%, 0);
+            transform: translate3d(0, -40%, 0);
+  }
+  87.5%, 95.0% {
+    -webkit-transform: translate3d(0, -20%, 0);
+            transform: translate3d(0, -20%, 0);
+  }
+}
+@media screen and (max-width: 1280px){
+  .content-animated {
+    line-height: -2vh;
+  }
+  /*Needs to be more responsive*/
+}
+@media screen and (max-width: 414px){
+  .content-animated {
+    line-height: 5vh;
+  }
+  /*Needs to be more responsive*/
+}
+@media screen and (max-width: 375px){
+  .content-animated {
+    line-height: -10vh!;
+  }
+  /*Needs to be more responsive*/
+  .content-animated__container:after, .content-animated__container:before {
+    line-height: 30px;
+  }
+}
+/*# sourceMappingURL=animatedText.css.map */
