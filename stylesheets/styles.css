@@ -1,0 +1,154 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+.filter {
+  transition: none !important;
+}
+html {
+  scroll-behavior: auto !important; /* Disable smooth scrolling */
+}
+/*------------------------------header related section------------------------------*/
+.brandlogo {
+  width: 135px;
+  border-radius: 50%;
+  margin: 0 0 0 0;
+  /*box-shadow: 4px 4px 20px rgb(211, 202, 202);*/ }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
+  width: 100%;
+  background-color: #ffad66; }
+
+/*------------------------------END of header related section------------------------------*/
+/*------------------------------parallaxing section------------------------------*/
+.smolbackground {
+  background: #ffead7;
+  position: absolute;
+  top: 1;
+  right: 100;
+  bottom: 1;
+  left: 100;
+  z-index: -1; }
+
+.rotating {
+  text-align: center;
+  transition: inherit; }
+
+/*------------------------------END of parallaxing section------------------------------*/
+/*------------------------------nav section------------------------------*/
+.navbar {
+  background-color: #ffad66;
+  margin: 0 0;
+  padding: 1em 1em;
+  border: none; }
+
+.nav {
+  padding: 0 4rem; }
+
+.navbar-brand {
+  font-size: 2ch; }
+
+.active li {
+  /* background-color: #f0aa7b; */
+  display: flex;
+  justify-content: center; }
+/* Active state styling */
+.nav-item.active .nav-link {
+  color: white !important;
+  background-color: #ffad66;
+  border-radius: 4px;
+}
+
+/* Default state styling */
+.nav-item:not(.active) .nav-link {
+  color: inherit;
+  background-color: transparent;
+}
+/*------------------------------end of nav section------------------------------*/
+body {
+  overflow-x: hidden;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  background: #ffead7;
+  overflow-anchor: none;
+}
+
+p {
+  margin: 1em; }
+
+h3, h4, h5 {
+  text-align: center;
+  margin: 1em 0; }
+
+ul > li {
+  margin-left: 2.5em; }
+
+.regBtn {
+  background-color: #ffbf83;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-flex;
+  font-size: 16px;
+  border-radius: 10px;
+  margin: 5vh 0; }
+
+.align-center {
+  text-align: center; }
+
+.paragraphPositioning {
+  margin: 120px 30px; }
+
+.tab {
+  margin-left: 2.5em; }
+
+.compactList {
+  list-style: none; }
+
+/*----------------------CV and Resumé Stuff------------------------------*/
+#cv {
+  /* width: 90rem; */
+  margin: auto auto;
+  padding: auto auto; }
+
+#work-xp,
+#projects {
+  font-size: medium; }
+
+hr.divider {
+  border-top: 1px solid black;
+  border-bottom: 0px;
+  width: 75%;
+  margin: 40px auto; }
+
+/*----------------------END OF CV and Resumé Stuff------------------------------*/
+/*----------------------Snap Shot Stuff------------------------------*/
+.snapshot_placing {
+  display: flex;
+  justify-content: center; }
+
+.snapshot {
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  margin: 0 10px; }
+
+.snapshot:hover {
+  opacity: 0.7; }
+
+/*----------------------END OF Snap Shot Stuff------------------------------*/
+/*----------------------Profile Image Stuff------------------------------*/
+.profileImage {
+  border-radius: 20px;
+  margin-top: 40px;
+  width: 350px; }
+
+.profileImagePosition {
+  text-align: center; }
+
+/*----------------------END OF Profile Image Stuff------------------------------*/

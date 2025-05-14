@@ -1,5 +1,5 @@
 function loadHeader() {
-    fetch("/pages/header.html")  // Use absolute path
+    fetch("/header.html")  // Use absolute path
       .then(response => {
         if (!response.ok) {
           throw new Error("Failed to load header");
